@@ -1,3 +1,3 @@
-# Banana-throw-project
-Simple game where you throw a banana at a target
+# Code-projects
+Just some personal projects that I have worked on throughout my learning programming
 
