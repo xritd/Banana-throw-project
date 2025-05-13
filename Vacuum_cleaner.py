@@ -146,7 +146,4 @@ try:
     plot_room(my_room, path, f"Vacuum Path from {start}")
 except ValueError as ve:
     print(f"ValueError: {ve}")
-    
-Nine = 9
-Ten = 12
 
