@@ -39,13 +39,13 @@ def Throw_banana(angle, velocity):
     while s[3] >= 0: # While y is non-negative
         s_list.append(s.copy())
 
-        # Forward Euler method
-        s += h*F(t, s, A, f) 
-
 	# RK2 method
-        # k1 = F(t, s, A, f)
-        # k2 = F(t + h/2, s + h*k1/2, A, f)
-        # s += h*k2 
+        k1 = F(t, s, A, f)
+        k2 = F(t + h/2, s + h*k1/2, A, f)
+        s += h*k2 
+	
+        # Alternative method: Forward Euler
+        # s += h*F(t, s, A, f) 
 
     x_points = [s[2] for s in s_list]
     y_points = [s[3] for s in s_list]
