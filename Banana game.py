@@ -10,7 +10,8 @@ h = 0.01 # Timestep size (should be less than tolerance)
 tol = 0.1 # Tolerance (or size of target)
 d = 5 # Initial distance from target
 
-def F(t, s, A, f): # ds/dt = As + f
+def F(t, s, A, f): 
+    # ds/dt = As + f
     return A@s + f
 
 def Throw_banana(angle, velocity):
